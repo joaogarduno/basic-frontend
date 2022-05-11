@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Frontend Developer | Selectores de CSSS - Parte 1</title>
+
+    <!-- Code CSS -->
+    <style>
+        /* quinto selector, llamado universal */
+        *{
+            background: peru;
+        }
+
+        /* primer tipo de selector */
+        div{
+            background: aquamarine;
+        }
+
+        /* segundo tipo de selector y es de CLASE */
+        .titulo{
+            color: chocolate;
+            background: yellow;
+        }
+
+        /* tercer selector ID */
+        #tituloid{
+            color: brown;
+            background: royalblue;
+        }
+
+        /* cuarto selector de atributo */
+        a[href="https://cssreference.io/"] {
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div>Esta es una prueba de selectores</div>
+    <div>Este es un segundo <strong>div</strong></div>
+
+    <!-- selector de tipo "class" -->
+    <div class="titulo">Titulo</div>
+
+    <!-- selector ID -->
+    <div id="tituloid">Selector de ID</div>
+
+    <!-- selector de atributo -->
+    <a href="https://cssreference.io/">CSS References</a>
+</body>
+</html>
