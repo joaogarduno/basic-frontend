@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Frontend Developer | Tipos de display mas usados: block, inline e inline-block</title>
+    <style>
+        /* se le aplica esta propiedad "margin" al <body> para quitar los espacios que trae por defecto (se aplica esto por cuestion del ejemplo) */
+        body{
+            margin: 0;
+        }
+
+        /* Los elementos de tipo bloque como <div>, tienen caracteristicas como, poder agregarle un "ancho" y un "alto" (width y height) */
+            /* Adicional a eso tambien podemos agregarle otras propiedades como "margin", y notamos que le podemos aplicar diferentes tipo de propiedades a este tipo de display que es "block" */
+        div{
+            background: chocolate;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+
+        /* Notamos que un elemento "inline" es muy pequeño ya no es de toda la pantalla como el "block" si no que su tamaño es del contenido que apenas tiene(es decir depende de su contenido para poder tener un tamaño) y este no va a crecer */
+            /* Pero que paso si a un elemento "inline" le colocamos un width y un height ¿se podran aplicar este tipo de valores? */
+            /* Los elemento que son de tipo en "inline" no tiene valides con las propiedades de "width" y "height" */
+            /* Pero si le colocamos un "margin" veremos que sucede, pero vemos que se aplica pero solo se mueve en horizontal, sin embargo no tiene valides la parte de arriba y de abajo, ojo, nos marca como si las tuviera pero en realidad no las tiene, esta es una de las caracteristicas que tiene este tipo de elementos en linea, y notamos que se cruza el margen del <div> de arriba con la invisible que tiene la de nuestro elemento <a> */
+        a{
+            background: crimson;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+
+        /* El elemento "button" no solo es un elemento de tipo "inline" si no que es tambien "inline-block" */
+            /* Si a un boton le quiero cambiar el tamaño con un "width" y un "height" estas propiedades vemos que si se le pueden aplicar aun "button" pero porque es un elemento en linea, es decir que su tamaño es de su mismo contenedor y adicional a eso y le podemos colocar caracteristicas de tipo "bloque" */
+            /* Es decir su visualizacion es de tipo "inline", pero tiene caracteristicas como el width y el height y el margin de los elementos bloque */
+        button{
+            background: darkcyan;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemento bloque -->
+    <div>Elemento de tipo bloque</div>
+
+    <!-- Elemento en linea -->
+    <a href="">inline</a>
+
+    <!-- Elemento "inline-block" -->
+    <button>inline-block</button>
+</body>
+</html>
