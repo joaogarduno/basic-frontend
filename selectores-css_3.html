@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Frontend Developer | Selectores Combinadores de CSSS - Parte 3</title>
+    <style>
+        p{
+            color: brown;
+        }
+        /* PSEUDOCLASES */
+        /* las pseudoclases son las que llevan solo ":" dos puntos */
+        p:hover{
+            color: aqua;
+        }
+
+        /* otro tipo de pseudoclases --> :nthchild */
+        div p:nth-child(2){
+            color: tomato;
+        }        
+
+        /* PSEUDOELEMENTOS */
+        /* si queremos estilizar la primera letra, lo que tenemos que hacer es lo siguiente */
+        p::first-letter{
+            color: mediumblue;
+        }
+
+        /* otro tipo de selector */
+        p::before{
+            content: "🧮";
+        }
+        p::after{
+            content: "🎟";
+            content: "";
+        }
+        ::placeholder{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>joao</p>
+        <p>probando otro tipo de pseudoclases llamadas <strong>:nth-child</strong></p>
+        <p>este es un parrafo</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
