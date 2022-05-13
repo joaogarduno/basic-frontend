@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Frontend Developer | Selectores Combinadores de CSSS - Parte 2</title>
+
+    <!-- STILOS -->
+    <style>
+        /* Esto indica o apunta a que... todos los <p> que esten dentro de un <div> */
+        div p{
+            color: mediumvioletred;
+        }
+
+        /* selector combinado: hijos directos completamente */
+        div > div{
+            background: maroon;
+        }
+        .box{
+            background: sandybrown;
+        }
+
+        /* elementos adyacentes */
+        /* El <section> que esta seguido del <div> va a tener un color especial */
+        div + section{
+            background: salmon;
+        }
+
+        /* selector de elementos hermanos */
+        /* Es decir el hermano que esta despues del <div> */
+            /* Entonces todos los hermanos <p> que tenemos despues de <div> que se le apliquen ciertas caracteristicas */
+        div ~ p{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel doloribus ullam officia, alias adipisci quisquam dicta iste similique animi obcaecati quaerat architecto voluptas illum tenetur nobis temporibus, harum eius?</p>
+            <div class="box">Otro div como caja de relleno para la prueba de "hijos directos"</div>
+        </div>
+    </div>
+
+
+    <!-- selector de elementos hermanos -->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam pariatur sapiente saepe iure temporibus doloribus vitae ad, aliquid harum voluptatem aut. Odit dolores rerum voluptatibus animi et ullam voluptate architecto?</p>
+
+    <!-- que pasa si agregamos otro <p> para el ejemplo de "selectores de elementos hermanos" -->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam pariatur sapiente saepe iure temporibus doloribus vitae ad, aliquid harum voluptatem aut. Odit dolores rerum voluptatibus animi et ullam voluptate architecto?</p>
+
+
+     <!-- Ejemplo de elementos adyacentes -->
+     <!-- Al crear este <section>, para que se aplique la regla de "elementos adyacentes" de CSS debe esta debajo del primer <div> de este documento -->
+    <!-- por cuestiones de ejemplo este section queda debajo de las etiquetas <p> -->
+     <section>
+        Este es un section
+    </section>    
+
+   
+    <!-- ejemplo de elementos adyacentes -->
+    <!-- <div>
+        Ejemplo de elementos adyacentes.
+    </div> -->
+</body>
+</html>
