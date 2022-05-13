@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Frontend Developer | Cascada y Especificidad en CSS</title>
+    <style>
+        /* Los tipos de selectores importan mucho, ya que el peso que tenga o el valor que tenga el selector es el que va a prevalecer y ese selector sera el seleccionado para que se apliquen dichos cambios */
+        
+        /* Y asi con este ejemplo podemos entender que reglas prevalecen sobre que reglas */
+        #conterId{
+            color: darkmagenta; 
+        }
+        .classConter{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="conterId" class="classConter">Especificidad</div>
+</body>
+</html>
